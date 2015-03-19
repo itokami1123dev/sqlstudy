@@ -1,0 +1,15 @@
+https://github.com/tomoko-19880702/sqlstudyにて、
+
+Forkを押して自分を選択
+
+SSH　cloneURLのボタンを押してURLをコピー
+
+デスクトップのGit　Shellを開く（黒い画面が表示される）
+
+cdと入力して、
+workフォルダのURLを貼り付ける
+
+gitと入力、
+SSH cloneURLのボタンを押してコピーしたURLを貼りつける
+
+新しいフォルダができてる。
