@@ -23,3 +23,18 @@ git status
 use git add memo.txt
 
 git commit と入力して出てきた画面に「フォークの手順を書きました」など書いて、×で閉じてOK
+
+ファイルを修正したら、上書き保存して、
+
+また同様にやったあと
+git log
+
+git status
+
+git add file~変更したやつか
+git checkout--戻るか
+きかれるので、git add memo.txtと書いてエンター
+
+git commit 「手順の変更」など書いて×で閉じる
+
+git log
