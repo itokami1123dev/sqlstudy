@@ -27,7 +27,7 @@ git commit と入力して出てきた画面に「フォークの手順を書き
 ファイルを修正したら、上書き保存して、
 
 また同様にやったあと
-git log
+git log←これで出した手紙とその中身
 
 git status
 
@@ -61,7 +61,31 @@ git remote -v
 　　origin git@github.com:tomoko～…（fetch）
 　　origin git@github.com:tomoko～…(push)
 と出てくる。originというのは私のあだ名のようなもの。
+masterは私が作業してる机のようなイメージ。
 
 git push origin masterといれる。
 
 これで郵便局に手紙をいれたことになる。
+
+
+で、https://github.com/itokami1123dev/sqlstudy/pull/1で更新すると表示されてる。
+
+その画面の上部にある
+
+
+
+git remote -v
+
+
+git push origin master
+
+git remote -v
+
+git remote add (またSSH cloneURLのボタンを押してコピーしたURLを貼りつける)
+
+git remote add apstream(またSSH cloneURLのボタンを押してコピーしたURLを貼りつける)
+※originをupstreamという名前に変えた
+
+git remote -v
+
+git pull upstream　→pullというのはもらうこと。
