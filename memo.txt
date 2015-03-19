@@ -20,7 +20,7 @@ SSH cloneURLのボタンを押してコピーしたURLを貼りつける
 
 git status
 
-use git add memo.txt
+git add memo.txt
 
 git commit と入力して出てきた画面に「フォークの手順を書きました」など書いて、×で閉じてOK
 
@@ -38,3 +38,30 @@ git checkout--戻るか
 git commit 「手順の変更」など書いて×で閉じる
 
 git log
+
+
+再びファイルを修正したら、上書き保存して、
+
+またgit status
+
+git log
+
+git status
+
+git add file~変更したやつか
+git checkout--戻るか
+きかれるので、git add memo.txtと書いてエンター
+
+git commit 「手順の変更」など書いて×で閉じる
+
+git log
+
+git remote -v
+で、[master]
+　　origin git@github.com:tomoko～…（fetch）
+　　origin git@github.com:tomoko～…(push)
+と出てくる。originというのは私のあだ名のようなもの。
+
+git push origin masterといれる。
+
+これで郵便局に手紙をいれたことになる。
