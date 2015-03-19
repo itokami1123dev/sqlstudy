@@ -13,3 +13,13 @@ gitと入力、
 SSH cloneURLのボタンを押してコピーしたURLを貼りつける
 
 新しいフォルダができてる。
+
+
+
+このメモしたファイルを封筒に入れて(git add)、封筒の封を閉じる(git commit)。
+
+git status
+
+use git add memo.txt
+
+git commit と入力して出てきた画面に「フォークの手順を書きました」など書いて、×で閉じてOK
