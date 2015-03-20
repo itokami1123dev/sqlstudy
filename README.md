@@ -23,3 +23,6 @@ PoargreSQLって？
 ここで「大量」とは、Excel などの表計算ソフトで扱える件数をはるかに超える、数千万件、数十億件の数のデータのことをいいます。私たちの普段の生活のまわりにもこのような大量のデータがたくさんあります。
 
 > http://lets.postgresql.jp/documents/tutorial/postgresql-abc
+
+webサーバー
+------------
