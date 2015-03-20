@@ -14,3 +14,13 @@ from person
     where orderlist.person_id=person.id
     and  orderlist.fruit_id=fruit.id;
 ```
+
+```sql
+select fruit.name
+      ,person.name
+ from fruit
+     ,person
+     ,orderlist
+where orderlist.person_id=person.id
+and  orderlist.fruit_id=fruit.id
+```
