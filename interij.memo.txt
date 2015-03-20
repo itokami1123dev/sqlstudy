@@ -1,2 +1,3 @@
 VCS >Git >pull>remoteをアップストリーム（毎回名前は違う）切り替え　>pull
 右下のnew branchで新しい机をつくる
+chengeでcommitする
