@@ -71,6 +71,10 @@ git push origin masterといれる。
 で、https://github.com/itokami1123dev/sqlstudy/pull/1で更新すると表示されてる。
 
 その画面の上部にあるsqlstudy押して、その下の緑のボタンをおすConpare,review～てやつ。
+
+pull requestという緑のボタンを押して
+タイトルつけて下の緑のボタン押す。→これで私から相手に送ったことになる。
+
 その下にファイル名：memo.txtがでてる。
 開くとファイルに入力したものが反映されている。
 
