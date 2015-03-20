@@ -89,4 +89,15 @@ git remote add apstream(またSSH cloneURLのボタンを押してコピーし�
 
 git remote -v
 
-git pull upstream　→pullというのはもらうこと。
+git pull upstream master　→pullというのはupstreamからmasterにもらうこと。
+
+
+
+相手が更新したファイルをもらうには…
+cd そのファイル（C:\work\Git\sqlstudy）
+
+git remote -v
+
+git pull upstream master
+
+で、でてくる。
