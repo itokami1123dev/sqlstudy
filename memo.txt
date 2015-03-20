@@ -1,107 +1,145 @@
-https://github.com/tomoko-19880702/sqlstudyにて、
+★https://github.com/tomoko-19880702/sqlstudyにて、
 
-Forkを押して自分を選択
+　Forkを押して自分を選択
 
-SSH　cloneURLのボタンを押してURLをコピー
+　SSH　cloneURLのボタンを押してURLをコピー
 
-デスクトップのGit　Shellを開く（黒い画面が表示される）
+　デスクトップのGit　Shellを開く（黒い画面が表示される）
 
-cdと入力して、
-workフォルダのURLを貼り付ける
+　cdと入力して、
+　workフォルダのURLを貼り付ける
 
-gitと入力、
-SSH cloneURLのボタンを押してコピーしたURLを貼りつける
+　gitと入力、
+　SSH cloneURLのボタンを押してコピーしたURLを貼りつける
 
-新しいフォルダができてる。
-
-
-
-このメモしたファイルを封筒に入れて(git add)、封筒の封を閉じる(git commit)。
-
-git status
-
-git add memo.txt
-
-git commit と入力して出てきた画面に「フォークの手順を書きました」など書いて、×で閉じてOK
-
-ファイルを修正したら、上書き保存して、
-
-また同様にやったあと
-git log←これで出した手紙とその中身
-
-git status
-
-git add file~変更したやつか
-git checkout--戻るか
-きかれるので、git add memo.txtと書いてエンター
-
-git commit 「手順の変更」など書いて×で閉じる
-
-git log
-
-
-再びファイルを修正したら、上書き保存して、
-
-またgit status
-
-git log
-
-git status
-
-git add file~変更したやつか
-git checkout--戻るか
-きかれるので、git add memo.txtと書いてエンター
-
-git commit 「手順の変更」など書いて×で閉じる
-
-git log
-
-git remote -v
-で、[master]
-　　origin git@github.com:tomoko～…（fetch）
-　　origin git@github.com:tomoko～…(push)
-と出てくる。originというのは私のあだ名のようなもの。
-masterは私が作業してる机のようなイメージ。
-
-git push origin masterといれる。
-
-これで郵便局に手紙をいれたことになる。
-
-
-で、https://github.com/itokami1123dev/sqlstudy/pull/1で更新すると表示されてる。
-
-その画面の上部にあるsqlstudy押して、その下の緑のボタンをおすConpare,review～てやつ。
-
-pull requestという緑のボタンを押して
-タイトルつけて下の緑のボタン押す。→これで私から相手に送ったことになる。
-
-その下にファイル名：memo.txtがでてる。
-開くとファイルに入力したものが反映されている。
-
-
-git remote -v
-
-
-git push origin master
-
-git remote -v
-
-git remote add (またSSH cloneURLのボタンを押してコピーしたURLを貼りつける)
-
-git remote add apstream(またSSH cloneURLのボタンを押してコピーしたURLを貼りつける)
-※originをupstreamという名前に変えた
-
-git remote -v
-
-git pull upstream master　→pullというのはupstreamからmasterにもらうこと。
+　新しいフォルダができてる。
 
 
 
-相手が更新したファイルをもらうには…
-cd そのファイル（C:\work\Git\sqlstudy）
+★このメモしたファイルを封筒に入れて(git add)、封筒の封を閉じる(git commit)。
 
-git remote -v
+　git status
 
-git pull upstream master
+　git add memo.txt
 
-で、でてくる。
+　git commit と入力して出てきた画面に「フォークの手順を書きました」など書いて、×で閉じてOK
+
+　ファイルを修正したら、上書き保存して、
+
+　また同様にやったあと
+　git log←これで出した手紙とその中身
+
+　git status
+
+　git add file~変更したやつか
+　git checkout--戻るか
+　きかれるので、git add memo.txtと書いてエンター
+
+　git commit 「手順の変更」など書いて×で閉じる
+
+　git log
+
+
+★再びファイルを修正したら、上書き保存して、
+
+　またgit status
+
+　git log
+
+　git status
+
+　git add file~変更したやつか
+　git checkout--戻るか
+　きかれるので、git add memo.txtと書いてエンター
+
+　git commit 「手順の変更」など書いて×で閉じる
+
+　git log
+
+　git remote -v
+　で、[master]
+　　　origin git@github.com:tomoko～…（fetch）
+　　　origin git@github.com:tomoko～…(push)
+　と出てくる。originというのは私のあだ名のようなもの。
+　masterは私が作業してる机のようなイメージ。
+
+　git push origin masterといれる。
+
+　これで郵便局に手紙をいれたことになる。
+
+
+　で、https://github.com/itokami1123dev/sqlstudy/pull/1で更新すると表示されてる。
+
+　その画面の上部にあるsqlstudy押して、その下の緑のボタンをおすConpare,review～てやつ。
+
+　pull requestという緑のボタンを押して
+　タイトルつけて下の緑のボタン押す。→これで私から相手に送ったことになる。
+
+　その下にファイル名：memo.txtがでてる。
+　開くとファイルに入力したものが反映されている。
+
+
+　git remote -v
+
+
+　git push origin master
+
+　git remote -v
+
+　git remote add (またSSH cloneURLのボタンを押してコピーしたURLを貼りつける)
+
+　git remote add apstream(またSSH cloneURLのボタンを押してコピーしたURLを貼りつける)
+　※originをupstreamという名前に変えた
+
+　git remote -v
+
+　git pull upstream master　→pullというのはupstreamからmasterにもらうこと。
+
+
+
+★　相手が更新したファイルをもらうには…
+　cd そのファイル（C:\work\Git\sqlstudy）
+
+　git remote -v
+
+　git pull upstream master
+
+　で、でてくる。
+
+★　一つの机でいろいろ作業しすぎて散らかっちゃったら、新たに別のテーブルで作業をし、
+作業が終われば消すということができる。
+別の机を作る(トピックブランチを作成)
+
+　git checkout -b test(←新しい机にわかりやすい名前を付ける)
+
+　git branch
+
+　git status
+
+　git diff←まだindexにaddしていないものを表示。
+
+　git status↓ここから普通に作業していく
+
+　git add memo.txt
+
+　git add network
+
+　git commit
+
+　git log
+
+　git push origin test
+
+　git checkout master←masterに更新を取り込む
+
+　git pull upstream master
+
+　git log
+
+　git branch
+
+　git branch -D test←これでワーキングツリーからtestという机を削除した
+
+　git branch
+
+　git push origin :test←これでGitHubからtestという机を削除した
