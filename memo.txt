@@ -1,0 +1,67 @@
+https://github.com/tomoko-19880702/sqlstudyにて、
+
+Forkを押して自分を選択
+
+SSH　cloneURLのボタンを押してURLをコピー
+
+デスクトップのGit　Shellを開く（黒い画面が表示される）
+
+cdと入力して、
+workフォルダのURLを貼り付ける
+
+gitと入力、
+SSH cloneURLのボタンを押してコピーしたURLを貼りつける
+
+新しいフォルダができてる。
+
+
+
+このメモしたファイルを封筒に入れて(git add)、封筒の封を閉じる(git commit)。
+
+git status
+
+git add memo.txt
+
+git commit と入力して出てきた画面に「フォークの手順を書きました」など書いて、×で閉じてOK
+
+ファイルを修正したら、上書き保存して、
+
+また同様にやったあと
+git log
+
+git status
+
+git add file~変更したやつか
+git checkout--戻るか
+きかれるので、git add memo.txtと書いてエンター
+
+git commit 「手順の変更」など書いて×で閉じる
+
+git log
+
+
+再びファイルを修正したら、上書き保存して、
+
+またgit status
+
+git log
+
+git status
+
+git add file~変更したやつか
+git checkout--戻るか
+きかれるので、git add memo.txtと書いてエンター
+
+git commit 「手順の変更」など書いて×で閉じる
+
+git log
+
+git remote -v
+で、[master]
+　　origin git@github.com:tomoko～…（fetch）
+　　origin git@github.com:tomoko～…(push)
+と出てくる。originというのは私のあだ名のようなもの。
+
+git push origin masterといれる。
+
+これで郵便局に手紙をいれたことになる。
