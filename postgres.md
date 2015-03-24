@@ -83,3 +83,30 @@ LEFT JOIN (
 ON tbl1.fruit_name=tbl2.fruit_name;
 ```
 
+```sql
+alter table orderlist add order_dt date;
+```
+
+```sql
+select tax_str_dt
+       ,tax_end_dt
+       ,tax_rate
+from tax
+where tax_str_dt <= '2014-04-01'
+and   tax_end_dt >= '2014-04-01'
+```
+
+```sql
+select *
+from tax
+where '2014-04-01' between tax_str_dt and tax_end_dt;
+```
+
+```sql
+select order_dt
+,tax_rate
+from tax
+,orderlist
+where orderlist.order_dt between tax.tax_str_dt and tax_end_dt
+;
+```
