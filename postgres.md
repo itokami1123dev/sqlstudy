@@ -159,3 +159,27 @@ where orderlist.person_id=person.id
 group by person.name;
 ```
 
+```sql
+select person.name
+        ,fruit.name as fruit_name
+        ,sum(fruit.price)
+        ,tax.tax_rate
+        ,round(fruit.price * tax.tax_rate/100)
+        +fruit.price
+        ,orderlist.order_dt
+      from fruit
+        ,person
+        ,orderlist
+        ,tax
+      where orderlist.person_id=person.id
+            and  orderlist.fruit_id=fruit.id
+            and person.id=5
+            and orderlist.order_dt between tax. tax_str_dt and tax_end_dt
+     GROUP BY fruit.name
+              ,person.name
+              ,fruit.price
+              ,tax.tax_rate
+              ,orderlist.order_dt
+    having 300 < sum(fruit.price)
+    order by sum(fruit.price)desc;
+```
