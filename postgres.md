@@ -110,3 +110,37 @@ from tax
 where orderlist.order_dt between tax.tax_str_dt and tax_end_dt
 ;
 ```
+
+```sql
+select fruit.name
+       ,fruit.price
+       ,tax.tax_rate
+       ,round(fruit.price * tax.tax_rate/100)
+       +fruit.price
+ from fruit
+         ,tax
+where '2015-03-25' between tax. tax_str_dt and tax_end_dt;
+```
+
+```sql
+select person.name
+        ,fruit.name as fruit_name
+        ,sum(fruit.price)
+        ,tax.tax_rate
+        ,round(fruit.price * tax.tax_rate/100)
+        +fruit.price
+        ,orderlist.order_dt
+      from fruit
+        ,person
+        ,orderlist
+        ,tax
+      where orderlist.person_id=person.id
+            and  orderlist.fruit_id=fruit.id
+            and person.id=5
+            and orderlist.order_dt between tax. tax_str_dt and tax_end_dt
+     GROUP BY fruit.name
+              ,person.name
+              ,fruit.price
+              ,tax.tax_rate
+              ,orderlist.order_dt;
+```
