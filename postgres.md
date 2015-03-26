@@ -183,3 +183,21 @@ select person.name
     having 300 < sum(fruit.price)
     order by sum(fruit.price)desc;
 ```
+
+```sql
+〜inner,full,left,right〜
+
+SELECT *
+  FROM person AS p
+       LEFT JOIN employee AS e
+               ON p.id = e.person_id;
+```
+
+```sql
+〜crossは一番下のONの行を消す〜
+
+SELECT *
+  FROM person AS p
+       CROSS JOIN employee AS e;
+```
+
