@@ -182,3 +182,20 @@ where orderlist.person_id=person.id
  and orderlist.fruit_id=fruit.id
 group by person.name;
 ```
+
+```sql
+〜inner,full,left,right〜
+
+SELECT *
+  FROM person AS p
+       LEFT JOIN employee AS e
+               ON p.id = e.person_id;
+```
+
+```sql
+〜crossは一番下のONの行を消す〜
+
+SELECT *
+  FROM person AS p
+       CROSS JOIN employee AS e;
+```
