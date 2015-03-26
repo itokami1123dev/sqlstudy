@@ -168,3 +168,17 @@ select person.name
     having 300 < sum(fruit.price)
     order by sum(fruit.price)desc;
 ```
+
+```sql
+select person.name
+      ,sum(fruit.price)
+      ,min(fruit.price)
+      ,max(fruit.price)
+      ,round(avg(fruit.price))
+from person
+    ,fruit
+    ,orderlist
+where orderlist.person_id=person.id
+ and orderlist.fruit_id=fruit.id
+group by person.name;
+```
