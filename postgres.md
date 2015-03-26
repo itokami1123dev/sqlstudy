@@ -184,8 +184,7 @@ group by person.name;
 ```
 
 ```sql
-〜inner,full,left,right〜
-
+LEFTは左のテーブルを軸に表示
 SELECT *
   FROM person AS p
        LEFT JOIN employee AS e
@@ -193,8 +192,31 @@ SELECT *
 ```
 
 ```sql
-〜crossは一番下のONの行を消す〜
+RIGHTは右のテーブルを軸に表示
+SELECT *
+  FROM person AS p
+       RIGHT JOIN employee AS e
+               ON p.id = e.person_id;
+```
 
+```sql
+FULLは全て表示
+SELECT *
+  FROM person AS p
+       FULL JOIN employee AS e
+               ON p.id = e.person_id;
+```
+
+```sql
+INNERは共通するもののみ表示
+SELECT *
+  FROM person AS p
+       INNER JOIN employee AS e
+               ON p.id = e.person_id;
+```
+
+```sql
+crossは２つのテーブルの全ての組み合わせを表示
 SELECT *
   FROM person AS p
        CROSS JOIN employee AS e;
