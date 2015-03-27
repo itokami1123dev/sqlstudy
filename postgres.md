@@ -221,3 +221,21 @@ SELECT *
   FROM person AS p
        CROSS JOIN employee AS e;
 ```
+
+```sql
+employeeに入ってない人を表示する
+
+select *
+from person as p
+left join employee as e
+on p.id=e.person_id
+where e.person_id is null;
+```
+
+```sql
+INを使って一致するものを表示する
+
+select *
+from person as p
+where id in (select person_id from employee);
+ ```
