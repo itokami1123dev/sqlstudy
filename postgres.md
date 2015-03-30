@@ -239,3 +239,55 @@ select *
 from person as p
 where id in (select person_id from employee);
  ```
+
+```sql
+like:あいまい検索でperson.nameに「ka」を含む人を表示
+
+select *
+from person
+where person.name like '%ka%';
+
+like 's%'だとsから始まる名前の人を表示
+like '%s'だとsで終わる名前の人
+```
+
+```sql
+exists()で存在するものを表示
+
+select *
+from person as p
+where exists (select person_id
+              from employee
+              where person_id=p.id);
+```
+
+```sql
+distinctで重複を消す
+
+select distinct person.name
+      ,fruit.name
+      ,fruit.price
+from  person
+     ,fruit
+     ,orderlist
+where orderlist.person_id=person.id
+ and  orderlist.fruit_id=fruit.id
+```
+
+```sql
+末尾にoffset(上から何行目以降を表示するか)、
+limit(上から最大何行表示するか)をつけて表示する行を指定できる
+
+select person.name
+      ,fruit.name
+      ,fruit.price
+from  person
+     ,fruit
+     ,orderlist
+where orderlist.person_id=person.id
+ and  orderlist.fruit_id=fruit.id
+group by  person.name
+      ,fruit.name
+      ,fruit.price
+      offset 12  limit 10;
+```
